@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
+    outline-style: none;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    font-family: Tahoma, Geneva, sans-serif;
+
+    /*-webkit-font-smoothing: antialiased;*/
+    border: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a img {
+    border: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    min-height: 100%;
+}
+
+
+.SCPlayer {
+    position: relative;
+    width: auto;
+    margin: 0 auto;
+
+}
+.SCPlayer > a, .SCPlayer > div, .SCPlayer > span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.SCPlayer > .player_progress_bar {
+    width: 493px;
+    background-color: #c4c4c4;
+    height: 2px;
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+.SCPlayer > .player_progress_bar > span {
+    background-color: black;
+    width: 0%;
+    height: 3px;
+    display: block;
+
+}
+
+.SCPlayer > .headphones {
+    margin-left: 0;
+    height: 41px;
+    width: 50px;
+    background: url("../img/headphones_ico-min.png") no-repeat center;
+    background-size: contain;
+}
+
+.SCPlayer > .play_btn {
+    width: 27px;
+    height: 27px;
+    margin-left: 13px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.SCPlayer > .prev {
+    background-image: url("../img/prev_btn_gray-min.png");
+}
+
+.SCPlayer > .play {
+    background-image: url("../img/play_btn_gray.png");
+}
+
+.SCPlayer > .pause {
+    background-image: url("../img/pause_btn_gray-min.png");
+}
+
+.SCPlayer > .next {
+    background-image: url("../img/next_btn_gray-min.png");
+}
+
+.SCPlayer > .volume {
+    width: 30px;
+    height: 30px;
+    margin-left: 15px;
+}
+
+.SCPlayer .volume_on {
+    background-image: url("../img/volume_btn_gray-min.png");
+}
+
+.SCPlayer .volume_off {
+    background-image: url("../img/volume_off_btn_gray-min.png");
+}
+
+.SCPlayer > .time_current {
+    margin-left: 24px;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    width: 40px;
+    text-align: right;
+
+}
+
+.SCPlayer > .time_end {
+    font-family: Tahoma, Geneva, sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    width: 40px;
+}
+
+.SCPlayer > .audio_title {
+    width: 146px;
+    overflow: hidden;
+    font-size: 12px;
+    /*TODO change font */
+    font-family: Tahoma, Geneva, sans-serif;
+    white-space: nowrap;
+    clear: both;
+    text-overflow: ellipsis;
+    margin-left: 12px;
+    font-weight: bold;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SoundCloudPlayer Example</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="SCPlayer">
+    <div class="headphones"></div>
+    <a href="#" class="play_btn prev" title="Предыдущая песня"></a>
+    <a href="#" class="play_btn play" title="Запустить проигрыватель"></a>
+    <a href="#" class="play_btn next" title="Следующая песня"></a>
+    <span class="time_current">0:00</span>
+
+    <div class="player_progress_bar">
+        <span></span>
+    </div>
+    <span class="time_end">0:00</span>
+    <a href="#" class="play_btn volume volume_on" title="Включить/выключить звук"></a>
+    <span class="audio_title">Ничего не проигрывается</span>
+</div>
+<script type="text/javascript" src="../lib/jquery-1.10.2.min.js"></script>
+<script src="http://connect.soundcloud.com/sdk-2.0.0.js"></script>
+<script type="text/javascript" src="../lib/soundcloudplayer.js"></script>
+
+
+<script>
+    var soundCloudInit = function () {
+        var player_dom = document.getElementsByClassName( 'SCPlayer' )[0];
+
+        player = new SCPlayer();
+        player.init( document.getElementsByClassName( 'play' )[0] , document.getElementsByClassName( 'prev' )[0] , document.getElementsByClassName( 'next' )[0] , document.getElementsByClassName( 'audio_title' )[0] , document.getElementsByClassName( 'volume' )[0] , document.getElementsByClassName( 'time_current' )[0] , document.getElementsByClassName( 'time_end' )[0] , document.getElementsByClassName( 'player_progress_bar' )[0] , document.getElementsByClassName( 'player_progress_bar' )[0].children[0] );
+
+    };
+
+    $(document ).ready(function(){
+        soundCloudInit();
+    })
+
+</script>
+</body>
+</html>
